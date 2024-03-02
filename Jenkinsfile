@@ -8,7 +8,7 @@ pipeline {
                 sh 'docker --version'
                 // sh 'docker-compose build'
                 // sh 'docker-compose up --build' 
-                timeout(time: 3, unit: 'MINUTES') {
+                timeout(time: 2, unit: 'MINUTES') {
                     sh 'docker-compose up -d'
                 }
             }
