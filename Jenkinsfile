@@ -8,8 +8,8 @@ pipeline {
                 sh 'docker --version'
                 // sh 'docker-compose build'
                 // sh 'docker-compose up --build' 
-                // timeout(time: 3, unit: 'MINUTES') {
-                //     sh 'docker-compose up -d'
+                timeout(time: 3, unit: 'MINUTES') {
+                sh 'docker-compose up -d'
             }
         }
         stage('Destroy the infrastructure') {
@@ -22,11 +22,11 @@ pipeline {
         }
     }
 
-    post {
-        success {
-        script {
-        slackSend channel: '#class-chat', color: '#439FE0', message: '🌶️ All_PROCESS_DONE!!! 🌶️', teamDomain: 'devops15tr', tokenCredentialId: '207'
-            }
-        }
-    } 
+    // post {
+    //     success {
+    //     script {
+    //     slackSend channel: '#class-chat', color: '#439FE0', message: '🌶️ All_PROCESS_DONE!!! 🌶️', teamDomain: 'devops15tr', tokenCredentialId: '207'
+    //         }
+    //     }
+    // } 
 }
