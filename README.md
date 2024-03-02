@@ -27,7 +27,8 @@ The project includes the following directories:
 ## Docker Compose
 
 The `docker-compose.yaml` file defines the services, networks, and environment variables in the project.
-![image](https://github.com/cloudnice/PERN-with-Jenkins/assets/154231505/98a02f35-4fc8-4ea6-87e3-2c056378124e)
+![image](https://github.com/cloudnice/PERN-with-Jenkins/assets/154231505/98a02f35-4fc8-4ea6-87e3-2c056378124e)![image](https://github.com/cloudnice/PERN-with-Jenkins/assets/154231505/07060661-3614-4845-809e-fe572d05a0e2)
+
 
 
 
