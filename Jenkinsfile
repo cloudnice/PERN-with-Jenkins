@@ -8,8 +8,8 @@ pipeline {
                 sh 'docker --version'
                 // sh 'docker-compose build'
                 // sh 'docker-compose up --build' 
-                timeout(time: 3, unit: 'MINUTES') {
-                    sh 'docker-compose up -d'
+                // timeout(time: 3, unit: 'MINUTES') {
+                //     sh 'docker-compose up -d'
             }
         }
         stage('Destroy the infrastructure') {
