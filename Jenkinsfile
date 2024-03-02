@@ -18,7 +18,8 @@ pipeline {
                 timeout(time: 5, unit: 'DAYS') {
                     input message: 'Approve terminate'
                 }
-                sh 'docker-compose down -v' 
+                sh 'docker-compose down' 
+                // sh 'docker-compose down -v' 
             }
         }
     }
