@@ -24,7 +24,6 @@ pipeline {
         script {
         slackSend channel: '#class-chat', color: '#439FE0', message: ':fire: Project-207 with jenkins :fire:', teamDomain: 'devops15tr', tokenCredentialId: 'jenkins-slack'
             }
-    }
-    }  
-
+        }
+    } 
 }
