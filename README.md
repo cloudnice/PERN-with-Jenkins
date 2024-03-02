@@ -1,10 +1,10 @@
-   # Dockerized Node.js and React App with PostgreSQL
+# Dockerized Node.js and React App with PostgreSQL Using Jenkins
 
 This project includes a Docker-based application with a PostgreSQL database, a Node.js server application, and a React client application.
 
 ## Running the Project
 
-This project is created for Docker Desktop. To run it in a different environment, you need to modify the server connection points in the `.env` files.
+This project is created for AWS EC2 Instance. To run it in a different environment, you need to modify the server connection points in the `.env` files.
 
 1. Open a Terminal or Command Prompt.
 2. Navigate to the directory where the `docker-compose.yaml` file is located.
@@ -14,7 +14,7 @@ This project is created for Docker Desktop. To run it in a different environment
     docker-compose up
     ```
 
-4. The applications will start, and you can access the client application at [http://localhost:3000](http://localhost:3000) and the server application at [http://localhost:5000](http://localhost:5000).
+4. The applications will start, and you can access the client application at [<http://INSTANCE_PUBLIC_IP>:3000](http://localhost:3000) and the server application at [http://<http://INSTANCE_PUBLIC_IP>:5000](http://localhost:5000).
 
 ## Project Structure
 
