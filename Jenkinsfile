@@ -23,7 +23,7 @@ pipeline {
     post {
         success {
         script {
-        slackSend channel: '#class-chat', color: '#439FE0', message: '🌶️ All_PROCESS_DONE!!! 🌶️', teamDomain: 'devops15tr', tokenCredentialId: 'jenkins-slack'
+        slackSend channel: '#class-chat', color: '#439FE0', message: '🌶️ All_PROCESS_DONE!!! 🌶️', teamDomain: 'devops15tr', tokenCredentialId: '207'
             }
         }
     } 
