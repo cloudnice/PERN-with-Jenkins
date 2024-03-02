@@ -7,7 +7,7 @@ pipeline {
                 sh 'ls -l'
                 sh 'docker --version'
                 sh 'docker-compose build'
-                sh 'docker-compose up' 
+                // sh 'docker-compose up' 
             }
         }
         stage('Destroy the infrastructure') {
