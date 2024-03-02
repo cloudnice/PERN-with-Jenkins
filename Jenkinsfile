@@ -6,7 +6,8 @@ pipeline {
                 echo 'Deploy the App'
                 sh 'ls -l'
                 sh 'docker --version'
-                sh 'docker-compose build' 
+                sh 'docker-compose build'
+                sh 'docker-compose up' 
             }
         }
         stage('Destroy the infrastructure') {
@@ -14,7 +15,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS') {
                     input message:'Approve terminate'
                 }
-                sh 'docker-compose down' 
+                sh 'docker-compose down -v' 
             }
         }
     }
